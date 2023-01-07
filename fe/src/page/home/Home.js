@@ -75,7 +75,7 @@ const Home = () => {
     "CHIẾT KHẤU , ƯU ĐÃI",
   ];
   const title =
-    "Chúng tôi không thuộc bất kỳ nhà cái hay đại lý nào,chúng tôi là nhóm độc lập.Lưu ý chỉ sử dụng duy nhất 1 số điện thoại này 0782 465 465.";
+    " Chúng tôi không thuộc bất kỳ nhà cái hay đại lý nào,chúng tôi là nhóm độc lập.Lưu ý chỉ sử dụng duy nhất 1 số điện thoại này 0782 465 465.";
   const {
     token: { colorBgContainer },
   } = theme.useToken();
