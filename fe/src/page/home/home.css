@@ -213,13 +213,18 @@
   padding: 5px;
 }
 marquee {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 700;
   margin-top: 10px;
   color: limegreen;
 }
 .container {
   min-height: 100vh;
+}
+.container ul li span {
+  font-weight: 700;
+  font-size: 20px !important;
+  color: red !important;
 }
 .avatar-content {
   padding: 15px;
