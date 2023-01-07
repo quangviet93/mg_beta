@@ -157,17 +157,44 @@ const Home = () => {
                 </Col>
               </Row>
               <Row className='row-content'>
-                <Col span={8}>
+                <Col span={6}>
                   <div className='avatar-content'>
                     <img src={avatar} alt='content' />
                   </div>
                 </Col>
-                <Col span={8}>
+                <Col span={6}>
                   <div className='avatar-content'>
                     <img src={avatar} alt='content' />
                   </div>
                 </Col>
-                <Col span={8}>
+                <Col span={6}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+                <Col span={6}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+              </Row>
+              <Row className='row-content'>
+                <Col span={6}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+                <Col span={6}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+                <Col span={6}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+                <Col span={6}>
                   <div className='avatar-content'>
                     <img src={avatar} alt='content' />
                   </div>
