@@ -1,0 +1,29 @@
+.App {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px; */
+  background-image: url("./image/pngtree-casino-chip-with-poker-background-image_786808.jpg");
+  min-height: 100vh;
+  color: #fff;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.ant-layout-header {
+  display: flex;
+  flex: none !important;
+  color: #fff !important;
+  padding-inline: 0 !important;
+}
+.ant-layout-header ul {
+  width: 100%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
