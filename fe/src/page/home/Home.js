@@ -5,85 +5,70 @@ import {
   NotificationOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { Breadcrumb, Layout, Menu, theme, Button, Col, Row } from "antd";
 import {
   AppstoreOutlined,
   MailOutlined,
   SettingOutlined,
 } from "@ant-design/icons";
 import "./home.css";
+import avatar from "../../image/ThongtinQuangcao.png";
+import Modal from "antd/es/modal/Modal";
 
 const { Header, Content, Sider } = Layout;
 const items = [
   {
-    label: "Navigation One",
-    key: "mail",
+    label: "ĐẠI LÝ , SALE , DỊCH VỤ",
+    key: "1",
     icon: <MailOutlined />,
   },
   {
-    label: "Navigation Three - Submenu",
-    key: "SubMenu",
-    icon: <SettingOutlined />,
-    children: [
-      {
-        type: "group",
-        label: "Item 1",
-        children: [
-          {
-            label: "Option 1",
-            key: "setting:1",
-          },
-          {
-            label: "Option 2",
-            key: "setting:2",
-          },
-        ],
-      },
-      {
-        type: "group",
-        label: "Item 2",
-        children: [
-          {
-            label: "Option 3",
-            key: "setting:3",
-          },
-          {
-            label: "Option 4",
-            key: "setting:4",
-          },
-        ],
-      },
-    ],
+    label: "TRAO ĐỔI MUA BÁN",
+    key: "2",
+    icon: <MailOutlined />,
   },
   {
-    label: (
-      <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-        Navigation Four - Link
-      </a>
-    ),
-    key: "alipay",
+    label: "CHIẾT KHẤU , ƯU ĐÃI",
+    key: "3",
+    icon: <MailOutlined />,
   },
 ];
-const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
-  (icon, index) => {
-    const key = String(index + 1);
-    return {
-      key: `sub${key}`,
-      icon: React.createElement(icon),
-      label: `subnav ${key}`,
-      children: new Array(4).fill(null).map((_, j) => {
-        const subKey = index * 4 + j + 1;
-        return {
-          key: subKey,
-          label: `option${subKey}`,
-        };
-      }),
-    };
-  }
-);
+const items2 = [
+  { name: "BXH VIP", icon: UserOutlined },
+  { name: "Đang hoạt động", icon: LaptopOutlined },
+  { name: "Tổng người dùng", icon: NotificationOutlined },
+].map((item, index) => {
+  const key = String(index + 1);
+  return {
+    key: `sub${index}`,
+    icon: React.createElement(item.icon),
+    label: item.name,
+    children: new Array(4).fill(null).map((_, j) => {
+      const subKey = index * 4 + j + 1;
+      return {
+        key: subKey,
+        label: `Vip ${subKey}`,
+      };
+    }),
+  };
+});
 
 const Home = () => {
-  const [current, setCurrent] = useState("mail");
+  const [current, setCurrent] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+    setCurrent(true);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   const arr = [
     "ĐẠI LÝ , SALE , DỊCH VỤ",
     "TRAO ĐỔI MUA BÁN",
@@ -95,28 +80,49 @@ const Home = () => {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Layout>
-      <Header className="header">
-        <div className="logo">
-          <img src={logoPage} alt="logo" />
+    <Layout className='container'>
+      <Header className='header'>
+        <div className='logo'>
+          <img src={logoPage} alt='logo' />
         </div>
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          selectedKeys={[current]}
-          items={items}
-        />
+        <Menu theme='dark' mode='horizontal' items={items} />
+        <div className='btn-n'>
+          {current === true && <Button type='primary'>Nạp Tiền</Button>}
+        </div>
+        <div className='btn-d'>
+          {!current ? (
+            <Button type='primary' onClick={showModal} danger>
+              Đăng Kí
+            </Button>
+          ) : (
+            <Button type='primary' danger>
+              Tên User
+            </Button>
+          )}
+          <Modal
+            title='Basic Modal'
+            open={isModalOpen}
+            onOk={handleOk}
+            onCancel={handleCancel}
+          >
+            <p>Tên Người Dùng</p>
+            <p>Số Điện Thoại</p>
+            <p>Email</p>
+          </Modal>
+        </div>
       </Header>
       <Layout>
         <Sider
           width={200}
           style={{
             background: colorBgContainer,
-          }}>
+          }}
+        >
           <Menu
-            mode="inline"
+            mode='inline'
+            theme='dark'
             defaultSelectedKeys={["1"]}
-            defaultOpenKeys={["sub1"]}
+            defaultOpenKeys={["sub0"]}
             style={{
               height: "100%",
               borderRight: 0,
@@ -125,26 +131,58 @@ const Home = () => {
           />
         </Sider>
         <Layout
+          className='main'
           style={{
             padding: "0 24px 24px",
-          }}>
-          <Breadcrumb
-            style={{
-              margin: "16px 0",
-            }}>
-            <Breadcrumb.Item>Home</Breadcrumb.Item>
-            <Breadcrumb.Item>List</Breadcrumb.Item>
-            <Breadcrumb.Item>App</Breadcrumb.Item>
-          </Breadcrumb>
-          <Content
+          }}
+        >
+          <div className='des-design'>
+            <marquee>{title}</marquee>
+            <div>
+              <Row className='row-content'>
+                <Col span={8}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+                <Col span={8}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+                <Col span={8}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+              </Row>
+              <Row className='row-content'>
+                <Col span={8}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+                <Col span={8}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+                <Col span={8}>
+                  <div className='avatar-content'>
+                    <img src={avatar} alt='content' />
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </div>
+          {/* <Content
             style={{
               padding: 24,
               margin: 0,
               minHeight: 280,
               background: colorBgContainer,
-            }}>
-            Content
-          </Content>
+            }}
+          ></Content> */}
         </Layout>
       </Layout>
     </Layout>

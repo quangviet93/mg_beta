@@ -174,10 +174,9 @@
   width: 200%;
   position: absolute;
   overflow: hidden;
-
+  animation-play-state: running;
   animation: marquee-gm 25s linear infinite;
 }
-
 .marquee-gm span {
   float: left;
   width: 50%;
@@ -191,4 +190,43 @@
   100% {
     left: -100%;
   }
+}
+.main {
+  color: #ffffff;
+  background-image: url("../../image/pngtree-casino-chip-with-poker-background-image_786808.jpg");
+}
+.main > main {
+  background: none !important;
+}
+.btn-n {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+.btn-d {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+.btn-n button,
+.btn-d button {
+  padding: 5px;
+}
+marquee {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: limegreen;
+}
+.container {
+  min-height: 100vh;
+}
+.avatar-content {
+  padding: 15px;
+}
+.avatar-content img {
+  width: 100%;
+  height: 100%;
+}
+.row-content {
 }
