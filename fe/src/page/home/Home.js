@@ -83,7 +83,8 @@ const Home = () => {
     "CHIẾT KHẤU , ƯU ĐÃI",
   ];
   const title =
-    " Chúng tôi không thuộc bất kỳ nhà cái hay đại lý nào,chúng tôi là nhóm độc lập.Lưu ý chỉ sử dụng duy nhất 1 số điện thoại này 0782 465 465.";
+    " Chúng tôi không thuộc bất kỳ nhà cái hay đại lý nào,chúng tôi là nhóm độc lập.Lưu ý chỉ sử dụng duy nhất 1 số điện thoại này";
+  const sdt = "0782 465 465.";
   const {
     token: { colorBgContainer },
   } = theme.useToken();
@@ -121,6 +122,7 @@ const Home = () => {
       </Header>
       <Layout>
         <Sider
+          className='sider'
           width={200}
           style={{
             background: colorBgContainer,
@@ -146,22 +148,24 @@ const Home = () => {
           }}
         >
           <div className='des-design'>
-            <marquee>{title}</marquee>
+            <marquee>
+              {title} <strong>{sdt}</strong>
+            </marquee>
             <div>
               <Row className='row-content'>
-                <Col span={8}>
+                <Col className='main-banner' lg={8} md={12}>
                   <div className='avatar-content'>
                     <img src={mot} alt='content' />
                     <img className='avatar-new' src={bay} alt='new' />
                   </div>
                 </Col>
-                <Col span={8}>
+                <Col className='main-banner' lg={8} md={12}>
                   <div className='avatar-content'>
                     <img src={mot} alt='content' />
                     <img className='avatar-new' src={bay} alt='new' />
                   </div>
                 </Col>
-                <Col span={8}>
+                <Col className='main-banner' lg={8} md={12}>
                   <div className='avatar-content'>
                     <img src={mot} alt='content' />
                     <img className='avatar-new' src={bay} alt='new' />
@@ -169,44 +173,44 @@ const Home = () => {
                 </Col>
               </Row>
               <Row className='row-content'>
-                <Col span={6}>
+                <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
                     <img src={hai} alt='content' />
                   </div>
                 </Col>
-                <Col span={6}>
+                <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
                     <img src={ba} alt='content' />
                   </div>
                 </Col>
-                <Col span={6}>
+                <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
                     <img src={bon} alt='content' />
                   </div>
                 </Col>
-                <Col span={6}>
+                <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
                     <img src={nam} alt='content' />
                   </div>
                 </Col>
               </Row>
               <Row className='row-content'>
-                <Col span={6}>
+                <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
                     <img src={sau} alt='content' />
                   </div>
                 </Col>
-                <Col span={6}>
+                <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
                     <img src={sau} alt='content' />
                   </div>
                 </Col>
-                <Col span={6}>
+                <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
                     <img src={sau} alt='content' />
                   </div>
                 </Col>
-                <Col span={6}>
+                <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
                     <img src={sau} alt='content' />
                   </div>
