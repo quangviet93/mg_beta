@@ -10,9 +10,17 @@ import {
   AppstoreOutlined,
   MailOutlined,
   SettingOutlined,
+  StrikethroughOutlined,
 } from "@ant-design/icons";
 import "./home.css";
-import avatar from "../../image/ThongtinQuangcao.png";
+import mot from "../../image/mot.jpeg";
+import hai from "../../image/hai.jpg";
+import bon from "../../image/bon.jpg";
+import ba from "../../image/ba.jpeg";
+import nam from "../../image/nam.png";
+import sau from "../../image/ThongtinQuangcao.png";
+import bay from "../../image/new-animated-gif-icon-2.gif";
+
 import Modal from "antd/es/modal/Modal";
 
 const { Header, Content, Sider } = Layout;
@@ -25,18 +33,18 @@ const items = [
   {
     label: "TRAO ĐỔI MUA BÁN",
     key: "2",
-    icon: <MailOutlined />,
+    icon: <LaptopOutlined />,
   },
   {
     label: "CHIẾT KHẤU , ƯU ĐÃI",
     key: "3",
-    icon: <MailOutlined />,
+    icon: <StrikethroughOutlined />,
   },
 ];
 const items2 = [
   { name: "BXH VIP", icon: UserOutlined },
-  { name: "Đang hoạt động", icon: LaptopOutlined },
-  { name: "Tổng người dùng", icon: NotificationOutlined },
+  { name: "Online", icon: LaptopOutlined },
+  { name: "Số lượng", icon: NotificationOutlined },
 ].map((item, index) => {
   const key = String(index + 1);
   return {
@@ -119,6 +127,7 @@ const Home = () => {
           }}
         >
           <Menu
+            className='side-bar'
             mode='inline'
             theme='dark'
             defaultSelectedKeys={["1"]}
@@ -142,61 +151,64 @@ const Home = () => {
               <Row className='row-content'>
                 <Col span={8}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={mot} alt='content' />
+                    <img className='avatar-new' src={bay} alt='new' />
                   </div>
                 </Col>
                 <Col span={8}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={mot} alt='content' />
+                    <img className='avatar-new' src={bay} alt='new' />
                   </div>
                 </Col>
                 <Col span={8}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={mot} alt='content' />
+                    <img className='avatar-new' src={bay} alt='new' />
                   </div>
                 </Col>
               </Row>
               <Row className='row-content'>
                 <Col span={6}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={hai} alt='content' />
                   </div>
                 </Col>
                 <Col span={6}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={ba} alt='content' />
                   </div>
                 </Col>
                 <Col span={6}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={bon} alt='content' />
                   </div>
                 </Col>
                 <Col span={6}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={nam} alt='content' />
                   </div>
                 </Col>
               </Row>
               <Row className='row-content'>
                 <Col span={6}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={sau} alt='content' />
                   </div>
                 </Col>
                 <Col span={6}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={sau} alt='content' />
                   </div>
                 </Col>
                 <Col span={6}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={sau} alt='content' />
                   </div>
                 </Col>
                 <Col span={6}>
                   <div className='avatar-content'>
-                    <img src={avatar} alt='content' />
+                    <img src={sau} alt='content' />
                   </div>
                 </Col>
               </Row>
