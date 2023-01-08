@@ -13,6 +13,9 @@ import {
   StrikethroughOutlined,
 } from "@ant-design/icons";
 import "./home.css";
+import bn from "../../image/12.png";
+import bm from "../../image/13.png";
+import bb from "../../image/14.png";
 import mot from "../../image/mot.jpeg";
 import hai from "../../image/hai.jpg";
 import bon from "../../image/bon.jpg";
@@ -20,8 +23,11 @@ import ba from "../../image/ba.jpeg";
 import nam from "../../image/nam.png";
 import sau from "../../image/ThongtinQuangcao.png";
 import bay from "../../image/new-animated-gif-icon-2.gif";
+import empty from "../../image/pngtree-happy-new-year-rabbit-year-2023-new-year-lantern-ingot-picture-image_1916429.jpg";
+import logo from "../../image/logo.webp";
 
 import Modal from "antd/es/modal/Modal";
+import { Footer } from "antd/es/layout/layout";
 
 const { Header, Content, Sider } = Layout;
 const items = [
@@ -92,12 +98,16 @@ const Home = () => {
     <Layout className='container'>
       <Header className='header'>
         <div className='logo'>
-          <img src={logoPage} alt='logo' />
+          <img src={logo} alt='logo' />
         </div>
         <Menu theme='dark' mode='horizontal' items={items} />
-        <div className='btn-n'>
-          {current === true && <Button type='primary'>Nạp Tiền</Button>}
-        </div>
+
+        {current === true && (
+          <div className='btn-n'>
+            <Button type='primary'>Nạp Tiền</Button>{" "}
+          </div>
+        )}
+
         <div className='btn-d'>
           {!current ? (
             <Button type='primary' onClick={showModal} danger>
@@ -123,7 +133,7 @@ const Home = () => {
       <Layout>
         <Sider
           className='sider'
-          width={200}
+          width={170}
           style={{
             background: colorBgContainer,
           }}
@@ -152,22 +162,22 @@ const Home = () => {
               {title} <strong>{sdt}</strong>
             </marquee>
             <div>
-              <Row className='row-content'>
+              <Row className='row-content vip-1'>
                 <Col className='main-banner' lg={8} md={12}>
                   <div className='avatar-content'>
-                    <img src={mot} alt='content' />
+                    <img src={bn} alt='content' />
                     <img className='avatar-new' src={bay} alt='new' />
                   </div>
                 </Col>
                 <Col className='main-banner' lg={8} md={12}>
                   <div className='avatar-content'>
-                    <img src={mot} alt='content' />
+                    <img src={bb} alt='content' />
                     <img className='avatar-new' src={bay} alt='new' />
                   </div>
                 </Col>
                 <Col className='main-banner' lg={8} md={12}>
                   <div className='avatar-content'>
-                    <img src={mot} alt='content' />
+                    <img src={bm} alt='content' />
                     <img className='avatar-new' src={bay} alt='new' />
                   </div>
                 </Col>
@@ -175,59 +185,57 @@ const Home = () => {
               <Row className='row-content'>
                 <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
-                    <img src={hai} alt='content' />
+                    <img src={empty} alt='content' />
                   </div>
                 </Col>
                 <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
-                    <img src={ba} alt='content' />
+                    <img src={empty} alt='content' />
                   </div>
                 </Col>
                 <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
-                    <img src={bon} alt='content' />
+                    <img src={empty} alt='content' />
                   </div>
                 </Col>
                 <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
-                    <img src={nam} alt='content' />
+                    <img src={empty} alt='content' />
                   </div>
                 </Col>
               </Row>
               <Row className='row-content'>
                 <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
-                    <img src={sau} alt='content' />
+                    <img src={empty} alt='content' />
                   </div>
                 </Col>
                 <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
-                    <img src={sau} alt='content' />
+                    <img src={empty} alt='content' />
                   </div>
                 </Col>
                 <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
-                    <img src={sau} alt='content' />
+                    <img src={empty} alt='content' />
                   </div>
                 </Col>
                 <Col lg={6} md={8} sm={12} sx={24}>
                   <div className='avatar-content'>
-                    <img src={sau} alt='content' />
+                    <img src={empty} alt='content' />
                   </div>
                 </Col>
               </Row>
             </div>
           </div>
-          {/* <Content
-            style={{
-              padding: 24,
-              margin: 0,
-              minHeight: 280,
-              background: colorBgContainer,
-            }}
-          ></Content> */}
         </Layout>
       </Layout>
+      <Footer className='footer' style={{ textAlign: "center" }}>
+        <span>
+          <strong>Hotline</strong> : 0782 465 465
+        </span>
+        <strong>M - A </strong> ©2023 Created by <strong> V - I - T</strong>
+      </Footer>
     </Layout>
   );
 };
