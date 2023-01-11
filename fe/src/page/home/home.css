@@ -228,8 +228,8 @@ marquee strong {
 }
 .container ul li span {
   font-weight: 700;
-  font-size: 20px !important;
-  color: #ffffb8 !important;
+  font-size: 16px !important;
+  color: gold !important;
 }
 .avatar-content {
   padding: 15px;
@@ -260,6 +260,26 @@ marquee strong {
   font-size: 16px !important;
   color: #ffffb8 !important;
 }
+.sider {
+  display: flex;
+}
+.sider ul {
+  max-width: 156px;
+}
+.btn-sider {
+  position: absolute;
+  bottom: 40%;
+  left: 15px;
+}
+
+.sider div:first-child {
+  position: relative;
+}
+.sider-btn {
+  position: absolute;
+  right: -20%;
+  top: 20%;
+}
 .row-content div {
   width: 100%;
 }
@@ -269,27 +289,81 @@ marquee strong {
 .header,
 .header ul,
 .sider div ul {
-  background-color: #000 !important;
+  background-color: #380200 !important;
+  color: white !important;
 }
 
 .footer {
   font-size: 20px !important;
-  background-color: #000 !important;
+  background-color: #380200 !important;
   color: gold !important;
 }
 .footer span {
   margin-right: 20px;
 }
-@media only screen and (max-width: 500px) {
+.container-qc {
+}
+.qc-left,
+.qc-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.qc-left div,
+.qc-right div {
+  width: 100%;
+}
+.qc-left img,
+.qc-right img {
+  width: 100%;
+}
+.video-qc {
+  padding: 0 20px;
+}
+#myVideo {
+  width: 100%;
+}
+.title-slot {
+  font-size: 28px;
+  font-weight: 700;
+  font-style: oblique;
+  text-align: center;
+  color: gold;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 575px) {
+  /* .container-qc {
+    display: flex;
+    flex-direction: column;
+  }
+  .qc-center {
+    order: 1;
+  }
+  .qc-left {
+    order: 1;
+  }
+  .qc-right {
+    order: 1;
+  } */
 }
 @media only screen and (max-width: 500px) {
+  .des-design {
+    padding: 15px;
+  }
   .main {
     padding: 0 !important;
   }
-  .sider {
+  .avatar-content {
+    width: 70% !important;
+    margin: 0 auto;
+  }
+  .title-slot {
+    font-size: 16px;
+  }
+  /* .sider {
     max-width: 130px !important;
     min-width: 100px !important;
-  }
+  } */
   .side-bar ul li span,
   .side-bar .ant-menu-submenu-title span {
     font-size: 14px !important;
