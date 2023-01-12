@@ -18,10 +18,14 @@ function Navbar() {
       key: "2",
       //   icon: <LaptopOutlined />,
     },
-
     {
       label: "CHIẾT KHẤU / ƯU ĐÃI",
       key: "3",
+      //   icon: <StrikethroughOutlined />,
+    },
+    {
+      label: "GIỚI THIỆU",
+      key: "4",
       //   icon: <StrikethroughOutlined />,
     },
   ];
@@ -30,7 +34,7 @@ function Navbar() {
       <h3>M - A</h3>
       <nav ref={navRef}>
         {items.map((e) => (
-          <a href="#">{e.label}</a>
+          <a href={e.key == 4 ? "/company" : "#"}>{e.label}</a>
         ))}
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />

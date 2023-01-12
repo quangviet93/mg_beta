@@ -1,0 +1,47 @@
+.main-detail {
+  text-align: center;
+  font-size: 24px;
+}
+.title-detail {
+  font-size: 28px;
+  font-weight: 700;
+}
+.title-content {
+  margin: 30px 0;
+}
+.content-detail {
+  text-align: start;
+  padding: 0 30px;
+}
+.back-page {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  padding: 15px;
+}
+.back-page button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #6d13bc;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #6d13bc;
+  background: #fbf5ff;
+  height: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.back-page button:hover {
+  background: #6d13bc;
+  border: none;
+  color: #fff !important;
+}
+.back-page a {
+  text-decoration: none;
+}

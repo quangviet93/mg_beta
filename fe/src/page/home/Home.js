@@ -20,7 +20,6 @@ import hai from "../../image/hai.jpg";
 import bon from "../../image/bon.jpg";
 import ba from "../../image/ba.jpeg";
 import nam from "../../image/nam.png";
-import sau from "../../image/ThongtinQuangcao.png";
 import bay from "../../image/new-animated-gif-icon-2.gif";
 import empty from "../../image/pngtree-happy-new-year-rabbit-year-2023-new-year-lantern-ingot-picture-image_1916429.jpg";
 import logo from "../../image/logo.webp";
@@ -39,7 +38,21 @@ import { Footer } from "antd/es/layout/layout";
 import Navbar from "../../components/Navbar";
 
 const Home = () => {
-  const arrTest = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  const arrTest = [
+    `${imageDefault}`,
+    `${imageDefault}`,
+    `${imageDefault}`,
+    `${imageDefault}`,
+    `${s1}`,
+    `${s2}`,
+    `${s3}`,
+    `${s4}`,
+    `${s5}`,
+    `${s6}`,
+    `${s7}`,
+    `${s8}`,
+  ];
+  console.log("arrTest", arrTest[5]);
   const projectsRef = useRef(null);
 
   const [spliceItem, setSpliceItem] = useState(true);
@@ -56,18 +69,6 @@ const Home = () => {
     }
   };
 
-  // const myFunction = () => {
-  //   var video = document.getElementById("myVideo");
-  //   var btn = document.getElementById("myBtn");
-  //   if (video.paused) {
-  //     video.play();
-  //     btn.innerHTML = "Pause";
-  //   } else {
-  //     video.pause();
-  //     btn.innerHTML = "Play";
-  //   }
-  // };
-  // myFunction();
   return (
     <Layout className="container" ref={projectsRef}>
       <div>
@@ -124,7 +125,7 @@ const Home = () => {
                 </Row>
               </div>
               <Row className="row-content">
-                <div className="title-slot">
+                <div className="title-slot animate-down-up">
                   Liên Hệ Chúng Tôi Bạn Sẽ Có Tất Cả
                 </div>
               </Row>
@@ -150,24 +151,24 @@ const Home = () => {
                   </Col>
                 </Row>
                 <Row className="row-content">
-                  <div className="title-slot">
-                    --------- Slot Game ---------
+                  <div className="title-slot animate-down-up">
+                    --------- Slot Empty ---------
                   </div>
                 </Row>
 
                 <Row className="row-content">
                   {spliceItem
-                    ? arrTest.slice(0, 4).map(() => (
-                        <Col lg={6} md={6} sm={6} sx={6}>
+                    ? arrTest.slice(0, 4).map((e, i) => (
+                        <Col key={i} lg={6} md={6} sm={6} sx={6}>
                           <div className="avatar-content bounce">
-                            <img src={imageDefault} alt="content" />
+                            <img src={e} alt="content" />
                           </div>
                         </Col>
                       ))
-                    : arrTest.map(() => (
-                        <Col lg={6} md={6} sm={6} sx={6}>
+                    : arrTest.map((e, i) => (
+                        <Col key={i} lg={6} md={6} sm={6} sx={6}>
                           <div className="avatar-content bounce">
-                            <img src={imageDefault} alt="content" />
+                            <img src={e} alt="content" />
                           </div>
                         </Col>
                       ))}
@@ -182,25 +183,25 @@ const Home = () => {
                 <div className="row-qc">
                   <div>
                     <ul>
-                      <p>
+                      <p className="animate-down-up">
                         <CheckOutlined />
                         Mẫu content thu hút là nội dung của một sự việc
                       </p>
-                      <p>
+                      <p className="animate-down-up">
                         <CheckOutlined />
                         Một vấn đề thu hút được ngay thị hiếu khách hàng
                       </p>
-                      <p>
+                      <p className="animate-down-up">
                         <CheckOutlined />
                         Nội dung này có thể được sử dụng để truyền tải các thông
                         điệp
                       </p>
-                      <p>
+                      <p className="animate-down-up">
                         <CheckOutlined />
                         Câu chuyện của bạn để chạm đến trái tim khách hàng để
                         hướng đến mục đích PR
                       </p>
-                      <p>
+                      <p className="animate-down-up">
                         <CheckOutlined />
                         Quảng cáo cho sản phẩm/dịch vụ của doanh nghiệp, review
                         về các tin tức/sản phẩm,… hiện nay.
