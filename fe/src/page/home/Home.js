@@ -104,12 +104,14 @@ const Home = () => {
                     md={18}
                     sm={18}
                     xs={18}>
-                    <video id="myVideo" autoPlay muted controls>
-                      <source
-                        src="https://res.cloudinary.com/quangviet93/video/upload/v1657944051/Netfix/y2mate.com_-_REVIEW_PHIM_BI%E1%BB%86T_%C4%90%E1%BB%98I_SI%C3%8AU_ANH_H%C3%99NG_1_AVENGERS_SAKURA_REVIEW_360p_vstzxl.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/vWAj_spvfCo?autoplay=1&mute=1"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
                   </Col>
                   <Col className="qc-left" lg={3} md={3} sm={3} xs={3}>
                     <Row>
@@ -217,7 +219,7 @@ const Home = () => {
       </Layout>
       <Footer className="footer" style={{ textAlign: "center" }}>
         <span>
-          <strong>Hotline</strong> : 0782 465 465
+          <strong>Hotline : 0782 465 465</strong>
         </span>
         <strong>M - A </strong> ©2023 Created by <strong> V - I - T</strong>
       </Footer>
