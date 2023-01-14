@@ -41,7 +41,7 @@ function Seo() {
     "✅ Nuôi, quản lý tài khoản Facebook tự động không giới hạn số lượng",
     "✅ Add Friend theo UID",
     "✅ Mời member vào group ",
-    "✅ add bạn trên group",
+    "✅ Add bạn trên group",
     "✅ Tích hợp đổi IP Proxy",
     "✅ Mời like Fanpage",
     "✅ Share livestream, Share bài viết, Seeding bài viết",

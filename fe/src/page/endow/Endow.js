@@ -7,14 +7,14 @@ function Endow() {
     "Áp khuyến mãi trực tiếp lên khách hàng đăng ký trang đối tác thông qua trang chúng tôi, hiện có 4 khuyến mãi .",
     "1/ Hoàn 10-30% số tiền khách thua tính theo các mốc thua/tuần",
     "==>( lưu ý: tiền mặt banking qua ngân hàng , momo )",
-    "✅ mốc 1 từ (1 triệu - 50 triệu) = 10%.",
-    "✅ mốc 2 từ (50 triệu - 150 triệu) = 15% ",
+    "✅ Mốc 1 từ (1 triệu - 50 triệu) = 10%.",
+    "✅ Mốc 2 từ (50 triệu - 150 triệu) = 15% ",
     "==>(lưu ý: 50 tới 70 triệu chỉ nhận 11% , trên 70 triệu mới tính mốc 2)",
     "✅ mốc 3 từ (150 triệu - 400 triệu) = 20% ",
     "==>(lưu ý: từ 150 tới 200 triệu chỉ nhận 16% , trên 200 triệu mới tính mốc 3)",
     "✅ mốc 4 từ (400 triệu - 1 tỷ) = 25% = 25%",
     "==>(lưu ý: từ 400 tới 600 triệu chỉ nhận 21% , trên 600 triệu tính mốc 4)",
-    "✅ mốc 5 vip (từ 1 tỷ - vô hạn) = 30% ==>(lưu ý: từ 1 tới 5 tỷ chỉ nhận 26% , trên 5 tỷ tính mốc 5)",
+    "✅ Mốc 5 vip (từ 1 tỷ - vô hạn) = 30% ==>(lưu ý: từ 1 tới 5 tỷ chỉ nhận 26% , trên 5 tỷ tính mốc 5)",
     "(kèm được phép yêu cầu giao tiền tận nơi khách , hoặc khách dến nhận có đội ngũ An Ninh Chuyên Nghiệp hộ tống về tận nhà áp dụng trên 3 miền Tổ Quốc )",
   ];
   const arrNoFree = [

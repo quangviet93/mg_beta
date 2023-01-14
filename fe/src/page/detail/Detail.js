@@ -4,12 +4,12 @@ import { Button } from "antd";
 import "./detail.css";
 function detail() {
   const arrFree = [
-    "✅ Chúng tôi là nhóm chuyên làm về Sự Kiện gôm nhiều thành viên chuyên làm tổ chức , sáng tạo , thiêt kế sự kiện mọi lãnh vực khác nhau.đên với chúng tôi các bạn sẽ được trải nghệm sự kiện là như thế nào.",
-    "✅ Nhiều người không hiểu cứ nghĩ SƯ KIỆN và SEO  là 2 cái riêng biệt , nhưng quan điểm  chúng tôi lại khác , bạn có 1 đội seo giỏi , không thể thiếu 1 đội sự kiện mang tính bức phá , chứng tôi có những tài năng trẻ , suy nghĩ vô cùng táo bạo.",
-    "✅ Con đường chúng tôi chọn , là hướng đi mới , sự bộc phá manh mẽ , hay hiệu ứng mạnh nhưng khồng mất đi cái mục tiêu chính , đội seo bế tắc ,không phải do Seo mà chính là do NGười làm SỰ KIỆN như chúng tôi chưa đủ giỏi , ngược lại SỰ KIỆN GIỎI ko có SEO GIỎI  cũng không làm gì được trừ khi cả 2 cùng 1 chiến tuyến hiệu quả ko phải chỉ x2 mà có thể x10 x 20 ( đây là quan điểm cá nhân của chúng tôi , xin mọi người đừng cười chê )",
-    "✅ Chúng tôi tạo ra sân chơi giành riêng cho SEO , thương hiệu riêng , ai nói 1 mình không có thương hiệu , đến với chúng tôi , tôi sẽ làmcho các bạn thấy điều cá nhân vẫn có thể làm được mà không cần phải có 1 đội hay tâp thể .",
-    "✅ NGuyên tăc là cá nhân giỏi chung lại tâp thể giỏi , nhưng tâp thể giỏi ko thể tạo ra cá nhân giỏi được , họ không có đất để phát triển.",
-    "✅ Chúng tôi sẽ tạo ra sân chơi cho các SEo , mâng thương hiệu riêng từng người , sau này dù các bạn làm công ty nào , chỉ cần còn giữ thương hiệu tôi tin sẽ có nhiều khách hàng cũ tiềm tới các bạn , và nhiều công ty sẽ cần các bạn , thương hiêu nó sẽ là thước đo năng lực các bạn chính xác nhất !!!!",
+    "✅ Chúng tôi là nhóm chuyên làm về Sự Kiện gôm nhiều thành viên chuyên làm tổ chức , sáng tạo , thiêt kế sự kiện mọi lãnh vực khác nhau.đên với chúng tôi các bạn sẽ được trải nghiệm sự kiện là như thế nào.",
+    "✅ Nhiều người không hiểu cứ nghĩ SƯ KIỆN và SEO  là 2 cái riêng biệt , nhưng quan điểm  chúng tôi lại khác , bạn có 1 đội seo giỏi , không thể thiếu 1 đội sự kiện mang tính bức phá , chúng tôi có những tài năng trẻ , suy nghĩ vô cùng táo bạo.",
+    "✅ Con đường chúng tôi chọn , là hướng đi mới , sự bộc phá mạnh mẽ , hay hiệu ứng mạnh nhưng không mất đi cái mục tiêu chính , đội SEO bế tắc ,không phải do SEO mà chính là do người làm SỰ KIỆN như chúng tôi chưa đủ giỏi , ngược lại SỰ KIỆN GIỎI ko có SEO GIỎI cũng không làm gì được trừ khi cả 2 cùng 1 chiến tuyến hiệu quả không phải chỉ x2 mà có thể x10 x 20 ( đây là quan điểm cá nhân của chúng tôi , xin mọi người đừng cười chê )",
+    "✅ Chúng tôi tạo ra sân chơi giành riêng cho SEO , thương hiệu riêng , ai nói 1 mình không có thương hiệu , đến với chúng tôi , tôi sẽ làm cho các bạn thấy điều cá nhân vẫn có thể làm được mà không cần phải có 1 đội hay tập thể .",
+    "✅ Nguyên tắc là cá nhân giỏi chung lại tập thể giỏi , nhưng tập thể giỏi không thể tạo ra cá nhân giỏi được , họ không có đất để phát triển.",
+    "✅ Chúng tôi sẽ tạo ra sân chơi cho các SEO , mang thương hiệu riêng từng người , sau này dù các bạn làm công ty nào , chỉ cần còn giữ thương hiệu tôi tin sẽ có nhiều khách hàng cũ tìm tới các bạn , và nhiều công ty sẽ cần các bạn , thương hiệu nó sẽ là thước đo năng lực các bạn chính xác nhất !!!!",
   ];
   return (
     <div className='main-detail'>
@@ -29,14 +29,14 @@ function detail() {
         </div>
         <div className='animate-down-up title-content'>
           <strong>
-            Chúng tôi sẽ có xếp hạng thương hiệu cá nhân , Tập thể , cty trên
-            trang chúng tôi , kèm thưởng nho nhỏ lấy đồng lưc
+            Chúng tôi sẽ có xếp hạng thương hiệu Cá Nhân , Tập Thể , Công Ty
+            trên trang chúng tôi , kèm thưởng nho nhỏ lấy đồng lực
           </strong>
         </div>
         <div className='animate-down-up title-content'>
           <strong>
-            CHÚNG TÔI NHÂN MẠNHN chúng tôi là bên chuyên nhân và tổ chức, sáng
-            tạo SỰ KIÊN không phải trang CỜ BẠC , Cảm Ơn.
+            CHÚNG TÔI NHẤN MẠNH chúng tôi là bên chuyên nhận và tổ chức, sáng
+            tạo SỰ KIỆN không phải trang CỜ BẠC , Cảm Ơn.
           </strong>
         </div>
       </div>

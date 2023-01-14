@@ -184,38 +184,65 @@ const Home = () => {
                   </Button>
                 </div>
               </div>
-              {[1, 2, 3].map(() => (
-                <div className='row-qc'>
-                  <div>
-                    <ul>
-                      <p className='animate-down-up'>
-                        <CheckOutlined />
-                        Mẫu content thu hút là nội dung của một sự việc
-                      </p>
-                      <p className='animate-down-up'>
-                        <CheckOutlined />
-                        Một vấn đề thu hút được ngay thị hiếu khách hàng
-                      </p>
-                      <p className='animate-down-up'>
-                        <CheckOutlined />
-                        Nội dung này có thể được sử dụng để truyền tải các thông
-                        điệp
-                      </p>
-                      <p className='animate-down-up'>
-                        <CheckOutlined />
-                        Câu chuyện của bạn để chạm đến trái tim khách hàng để
-                        hướng đến mục đích PR
-                      </p>
-                      <p className='animate-down-up'>
-                        <CheckOutlined />
-                        Quảng cáo cho sản phẩm/dịch vụ của doanh nghiệp, review
-                        về các tin tức/sản phẩm,… hiện nay.
-                      </p>
-                    </ul>
-                  </div>
-                  <img src={banner_footer} alt='content' />
+              <div className='row-qc'>
+                <div>
+                  <ul>
+                    <p className='animate-down-up'>
+                      <CheckOutlined />
+                      Chúng tôi sẽ tạo ra sân chơi cho các SEO , mang thương
+                      hiệu riêng từng người , sau này dù các bạn làm công ty nào
+                      , chỉ cần còn giữ thương hiệu tôi tin sẽ có nhiều khách
+                      hàng cũ tìm tới các bạn , và nhiều công ty sẽ cần các bạn
+                      , thương hiệu nó sẽ là thước đo năng lực các bạn chính xác
+                      nhất !!!!
+                    </p>
+                  </ul>
                 </div>
-              ))}
+                <img src={banner_footer} alt='content' />
+              </div>
+              <div className='row-qc'>
+                <div>
+                  <ul>
+                    <p className='animate-down-up'>
+                      <CheckOutlined />
+                      QUAN ĐIỂM CỦA TÔI chỉ có SỰ KIỆN YẾU KÉM chứ không có SEO
+                      YẾU KÉM , sự THẤT BẠI của các bạn là do SỰ YẾU KÉM của
+                      người làm SỰ KIỆN chúng tôi.
+                    </p>
+                  </ul>
+                </div>
+                <img src={banner_footer} alt='content' />
+              </div>
+              <div className='row-qc'>
+                <div>
+                  <ul>
+                    <p className='animate-down-up'>
+                      <CheckOutlined />
+                      Mẫu content thu hút là nội dung của một sự việc
+                    </p>
+                    <p className='animate-down-up'>
+                      <CheckOutlined />
+                      Một vấn đề thu hút được ngay thị hiếu khách hàng
+                    </p>
+                    <p className='animate-down-up'>
+                      <CheckOutlined />
+                      Nội dung này có thể được sử dụng để truyền tải các thông
+                      điệp
+                    </p>
+                    <p className='animate-down-up'>
+                      <CheckOutlined />
+                      Câu chuyện của bạn để chạm đến trái tim khách hàng để
+                      hướng đến mục đích PR
+                    </p>
+                    <p className='animate-down-up'>
+                      <CheckOutlined />
+                      Quảng cáo cho sản phẩm/dịch vụ của doanh nghiệp, review về
+                      các tin tức/sản phẩm,… hiện nay.
+                    </p>
+                  </ul>
+                </div>
+                <img src={banner_footer} alt='content' />
+              </div>
             </div>
           </Layout>
         </div>
@@ -224,7 +251,7 @@ const Home = () => {
         <span>
           <strong>Hotline : 0782 465 465</strong>
         </span>
-        <strong>M - H - A </strong> ©2023 Created by <strong> V - I - T</strong>
+        <strong>M - H - A</strong> ©2023 Created by<strong> V - I - T</strong>
       </Footer>
     </Layout>
   );

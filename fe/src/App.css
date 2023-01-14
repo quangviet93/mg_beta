@@ -68,12 +68,12 @@ header h3 {
   font-size: 24px;
 }
 nav a {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 21px;
   margin: 0 1rem;
-  color: var(--blackColor);
-  box-shadow: 0px 0px 3px 10px #fff;
-  background-color: white;
+  color: #fff1b8;
+  box-shadow: 0px 0px 3px 10px var(--blackColor);
+  background-color: var(--blackColor);
   border-radius: 50%;
 }
 
