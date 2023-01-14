@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../image/logoMA.jpg";
 
 function Navbar() {
   const navRef = useRef();
@@ -9,38 +10,45 @@ function Navbar() {
   };
   const items = [
     {
-      label: "ĐẠI LÝ / SALE / DỊCH VỤ",
-      key: "1",
-      //   icon: <MailOutlined />,
+      label: "Đại Lý / SEO",
+      key: "/seo",
+      //   icon: <MailOutlined />
     },
     {
-      label: "TRAO ĐỔI MUA BÁN",
-      key: "2",
+      label: "Mua Bán 0 Đồng",
+      key: "/404",
       //   icon: <LaptopOutlined />,
     },
     {
-      label: "CHIẾT KHẤU / ƯU ĐÃI",
-      key: "3",
+      label: "Thiết kế Event",
+      key: "/404",
+      //   icon: <LaptopOutlined />,
+    },
+    {
+      label: "Ưu Đãi Người Chơi",
+      key: "/endow",
       //   icon: <StrikethroughOutlined />,
     },
     {
-      label: "GIỚI THIỆU",
-      key: "4",
+      label: "Giới Thiệu",
+      key: "/company",
       //   icon: <StrikethroughOutlined />,
     },
   ];
   return (
     <header>
-      <h3>M - A</h3>
+      <div className='logo-MHA'>
+        <img src={logo} atl='logo' />
+      </div>
       <nav ref={navRef}>
         {items.map((e) => (
-          <a href={e.key == 4 ? "/company" : "#"}>{e.label}</a>
+          <a href={e.key}>{e.label}</a>
         ))}
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+        <button className='nav-btn nav-close-btn' onClick={showNavbar}>
           <FaTimes />
         </button>
       </nav>
-      <button className="nav-btn" onClick={showNavbar}>
+      <button className='nav-btn' onClick={showNavbar}>
         <FaBars />
       </button>
     </header>

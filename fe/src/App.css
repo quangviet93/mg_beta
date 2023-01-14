@@ -27,13 +27,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Titillium Web", sans-serif;
+  font-family: initial;
 }
 
 :root {
@@ -51,10 +50,16 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  padding: 0 2rem;
+  padding-right: 2rem;
   background-image: url("./image/banner-tet-20195c307e02b9272.jpg");
   background-color: var(--mainColor);
-  color: var(--headerColor);
+  background-size: cover;
+  color: var(--blackColor);
+}
+.logo-MHA img {
+  object-fit: cover;
+  width: 80px;
+  height: 100%;
 }
 nav {
   z-index: 99;
@@ -63,10 +68,13 @@ header h3 {
   font-size: 24px;
 }
 nav a {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 21px;
   margin: 0 1rem;
-  color: var(--headerColor);
+  color: var(--blackColor);
+  box-shadow: 0px 0px 3px 10px #fff;
+  background-color: white;
+  border-radius: 50%;
 }
 
 nav a:hover {
