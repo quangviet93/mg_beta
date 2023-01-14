@@ -109,7 +109,7 @@ const Home = () => {
                     <iframe
                       width='100%'
                       height='100%'
-                      src='https://www.youtube.com/embed/vWAj_spvfCo?autoplay=1&mute=1'
+                      src='https://www.youtube.com/embed/Lb_Vf6X8eDg?autoplay=1&loop=1&mute=1'
                       title='YouTube video player'
                       frameborder='0'
                       allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
@@ -157,7 +157,7 @@ const Home = () => {
                 </Row>
                 <Row className='row-content'>
                   <div className='title-slot animate-down-up'>
-                    --------- Slot Empty ---------
+                    --------- Banner Cá Nhân ---------
                   </div>
                 </Row>
 
