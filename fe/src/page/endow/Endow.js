@@ -21,40 +21,40 @@ function Endow() {
     "2/ Khách tham gia liên tục thua 5-10-15 ngày Hoàn thêm theo mốc 5%-10%-15% , số tiền thua tối thiêu 1 triệu/1 ngày ",
     "==>(lưu ý: tiền này sẽ được trực tiếp + vao trang thua)",
     "3/ Khách tham gia chơi tổng tiền thua/tuần liên tục 4 tuần hoàn 10% chuyển khoản !",
-    "==>(lưu ý: nếu bị ngắt quãng , tính lại từ đầu, tối thiểu 5 triệu / tuân )",
+    "==>(lưu ý: nếu bị ngắt quãng , tính lại từ đầu, tối thiểu 5 triệu /tuần )",
     "4/ Khách  mãi đặc biệt---> Hoàn đến 100% tiền thua/tháng",
-    "==>(lưu ý: Sẽ có dự đoán kết quả xổ sô ngày 30 hàng tháng tính theo giải Độc Đắc/miền bắc vào 18h15 giờ Việt Nam )",
+    "==>(lưu ý: Sẽ có dự đoán kết quả xổ sô ngày 30 hàng tháng tính theo giải Độc Đắc/Miền Bắc vào 18h15 giờ Việt Nam )",
     "==> (lưu ý: đơn vị tính *4 con số đuôi* mỗi người chỉ được 1 dãy số gồm 4 con ) sẽ chiếu trực tiếp trên tivi của Trang !)",
   ];
   const about = [];
   return (
-    <div className='main-detail'>
-      <div className='title-detail animate-down-up'>
+    <div className="main-detail">
+      <div className="title-detail animate-down-up">
         Chi Tiết Về Chúng Tôi Liên Hệ 0782 465 465.
       </div>
       <div>
-        <div className='animate-down-up title-content'>
+        <div className="animate-down-up title-content">
           <strong>Ưu Đãi Khách Hàng Cá NHân</strong>
         </div>
-        <div className='content-detail'>
+        <div className="content-detail">
           {arrFree.map((e, i) => (
-            <p key={i} className='animate-down-up'>
+            <p key={i} className="animate-down-up">
               {e}
             </p>
           ))}
         </div>
       </div>
       <div>
-        <div className='content-detail'>
+        <div className="content-detail">
           {arrNoFree.map((e, i) => (
-            <p key={i} className='animate-down-up'>
+            <p key={i} className="animate-down-up">
               {e}
             </p>
           ))}
         </div>
       </div>
-      <div className='back-page'>
-        <a href='/'>
+      <div className="back-page">
+        <a href="/">
           <Button>Trở Lại</Button>
         </a>
       </div>
