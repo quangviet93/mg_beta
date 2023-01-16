@@ -16,7 +16,7 @@ function Navbar() {
     },
     {
       label: "Mua Bán 0 Đồng",
-      key: "/404",
+      key: "https://t.me/+zx77SgDEKQ01ZDE1",
       //   icon: <LaptopOutlined />,
     },
     {
@@ -37,18 +37,23 @@ function Navbar() {
   ];
   return (
     <header>
-      <div className='logo-MHA'>
-        <img src={logo} atl='logo' />
+      <div className="logo-MHA">
+        <img src={logo} atl="logo" />
       </div>
       <nav ref={navRef}>
         {items.map((e) => (
-          <a href={e.key}>{e.label}</a>
+          <a
+            href={e.key}
+            target={e.label === "Mua Bán 0 Đồng" ? "_blank" : ""}
+            rel="noopener noreferrer">
+            {e.label}
+          </a>
         ))}
-        <button className='nav-btn nav-close-btn' onClick={showNavbar}>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
         </button>
       </nav>
-      <button className='nav-btn' onClick={showNavbar}>
+      <button className="nav-btn" onClick={showNavbar}>
         <FaBars />
       </button>
     </header>
