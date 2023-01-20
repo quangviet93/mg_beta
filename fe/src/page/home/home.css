@@ -316,6 +316,14 @@ marquee strong {
   flex-direction: column;
   justify-content: space-between;
 }
+.qc-left div {
+  height: 33%;
+}
+.qc-left div a {
+  height: 100%;
+  width: 100%;
+}
+
 .qc-left div,
 .qc-right div {
   width: 100%;
@@ -323,6 +331,7 @@ marquee strong {
 .qc-left img,
 .qc-right img {
   width: 100%;
+  height: 100%;
 }
 .video-qc {
   padding: 0 20px;
